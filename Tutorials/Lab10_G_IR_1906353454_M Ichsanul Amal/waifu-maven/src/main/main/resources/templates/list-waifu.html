@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>WaifuDB | list</title>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Muli'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body class="text-center" style="background-color: aquamarine; font-family: 'Muli';font-size: 22px;">
+        <div class="mt-5 mb-5 d-flex justify-content-center">
+            <h1 class="mr-5">list waifu</h1>
+            <ol>
+                <li th:each="waifu : ${listWaifu}"> th:text="${waifu}"></li>
+            </ol>    
+        </div>
+        <a href="/"><button class="btn btn-primary">kembali ke halaman awal</button></a>
+    </body>
+</html>
